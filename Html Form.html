@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head><title>Student Registration Form</title></head>
+    <body style="background-color: black">
+        <h2 style="text-align: center;color: brown">Student Registration Form</h2>
+        <form style="background-color:darkseagreen;color:darkcyan">
+            <label><b>Branch</b></label><select>
+            <option>Select Your Branch</option>
+            <option>CSE</option>
+            <option>ESC</option>
+            <option>Machenical</option>
+            <option>Civil</option>
+            <option>EE</option>
+            </select><br><br>
+            <label><b>First Name</b></label> <input type="text" required pattern="[A-Za-z]{0,20}"  placeholder="xxxxxxxxx" title="Only alphabets allowed">
+            <label><b>Middle Name</b></label><input type="text" pattern="[A-Za-z]{0,20}" title="Only alphabets allowed"  placeholder="">
+            <label><b>Last Name</b></label><input type="text" pattern="[A-Za-z]{0,20}" title="Only alphabets allowed"  placeholder="xxxxxxxxx"><br><br>
+            <label><b>Email ID</b></label><input type="email" placeholder="xxx@gmail.com" required><br><br>
+            <label><b>Age</b></label><input type="number" placeholder="age" required><br><br>
+            <label><b>Mobile Number</b></label><input type="number" placeholder="xxxxxxxxxx" required><br><br>
+            <label><b>DOB</b></label><input type="date" required placeholder="xx/xx/xxxx" min="1990-01-01" max="2010-01-01"><br><br>
+            <label><b>Gender</b></label><input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Others">Others<br><br>
+            <label><b>Highest Qualification</b></label><input type="checkbox">Diploma
+            <input type="checkbox">Intermediate
+            <input type="checkbox">B.Sc
+            <input type="checkbox">Others<input type="text" placeholder="Ex: BA"><br><br>
+            <label><b>Address</b></label><textarea></textarea><br><br>
+            <label><b>Pin Code</b></label><input type="number" placeholder="1234567"><br><br>
+            <label><b>City</b></label><input type="text" required pattern="[A-Za-z]{0,20}"><br><br>
+            <label><b>State</b></label><input type="text" required pattern="[A-Za-z]{0,20}"><br><br>
+            <label><b>Country</b></label><input type="text" required pattern="[A-Za-z]{0,20}"><br><br>
+            <label><b>Refferal Code</b></label><input type="password" placeholder="XXXXXXXXXXXX"><br><br>
+            <label><b>Upload Photograph</b></label><input type="file"><br><br>
+            <label><b>Upload Signature</b></label><input type="file"><br><br>
+            <label><b>Today Date and time</b></label><input type="datetime-local"><br><br>
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </body>
+</html>

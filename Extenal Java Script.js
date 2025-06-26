@@ -1,0 +1,1 @@
+document.write("Inside external javascript file.")

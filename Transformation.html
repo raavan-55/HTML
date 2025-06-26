@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Border Tag</title> 
+    <style>
+        @keyframes movelement1{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            20%{
+                top:0px;
+                left:500px;
+            }
+            40%{
+                top:500px;
+                left:700px;
+            }
+            60%{
+                top:500px;
+                left:500px;
+            }
+            80%{
+                top:0px;
+                left:0px;
+            }
+            100%{
+               top:0px;
+                left:800px; 
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        } 
+        @keyframes movelement2{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            20%{
+                top:0px;
+                left:500px;
+            }
+            40%{
+                top:500px;
+                left:700px;
+            }
+            60%{
+                top:500px;
+                left:500px;
+            }
+            80%{
+                top:0px;
+                left:0px;
+            }
+            100%{
+               top:0px;
+                left:600px; 
+            }
+            to{
+                 transform:skew(180deg);
+            }
+        } 
+        @keyframes movelement3{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            20%{
+                top:0px;
+                left:500px;
+            }
+            40%{
+                top:500px;
+                left:700px;
+            }
+            60%{
+                top:500px;
+                left:500px;
+            }
+            80%{
+                top:0px;
+                left:0px;
+            }
+            100%{
+               top:0px;
+                left:400px; 
+            }
+            
+            to{
+                 transform: scale(2,2)
+            }
+        } 
+        
+    
+        .bg{
+            border-bottom-left-radius:50%;
+            border-bottom-right-radius:50%; 
+             background-color:chocolate;
+            animation-iteration-count:infinite;
+            
+            
+        }
+        *{ 
+           
+            color:firebrick;
+            font-family: cursive;
+            background-color: black;
+            
+           
+           
+        }
+        #anubhav{  
+            height:100px;
+            width:100px;
+            border:3px solid;
+            border-color: darkgoldenrod;
+            border-top:dotted;
+             border-bottom-color:green;
+            animation:movelement1 4s;
+            position: absolute;
+            
+            
+            
+        }
+        #kumar{
+            height:100px;
+            width:100px;
+            border:3px dotted;
+             border-top:solid;
+            border-color:blue;
+            border-bottom-color:red;
+            animation:movelement2 6s ;
+            position: absolute;
+           
+            
+        }
+        #prajapati{
+            height:100px;
+            width:100px;
+            border:3px double;
+            border-color:green;
+            border-bottom-color:darkblue;
+            animation:movelement3 10s;
+            position: absolute;
+           
+        }
+        
+    </style>
+</head>
+<body>
+ <p id="anubhav" class="bg">Anubhav</p>
+     <p id="kumar" class="bg">Kumar</p>
+    <p id="prajapati" class="bg">Prajapati</p>
+     
+</body>
+</html>
